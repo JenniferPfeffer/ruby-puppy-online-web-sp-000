@@ -19,10 +19,7 @@ class Dog
     end 
   end
   def self.clear_all 
-    @@all.collect do |dog| 
-      @@all.delete(dog) 
-    end 
-    @@all
+    @@all.clear
   end 
   def save 
     @@all << self 

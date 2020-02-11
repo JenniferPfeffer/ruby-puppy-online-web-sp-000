@@ -4,7 +4,7 @@ class Dog
   @@names =[ ]
   attr_reader :name
   def initialize(name) 
-    
+    @name = name
     save 
     if @@names.include?(name) == false 
       @@names << name 
@@ -14,8 +14,10 @@ class Dog
     @@all 
   end 
   def self.print_all 
-    @@names.each do |dog| 
-      puts dog 
+    @@names.each do |dog|  
+      if dog != snoopy
+      puts dog  
+    end
     end 
   end
   def self.clear_all 

@@ -23,6 +23,8 @@ class Dog
       @@all.delete(dog) 
     end 
     @@all
-  end
+  end 
+  def save 
+    
 end
   

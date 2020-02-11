@@ -5,8 +5,10 @@ class Dog
   attr_reader :name
   def initialize(name) 
     @name = name 
-    @@names << name
     @@all << self 
+    if @@names.include?(name) == false 
+      @@names << name 
+    end
   end 
   def self.all 
     @@all 

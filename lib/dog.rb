@@ -5,14 +5,14 @@ class Dog
   attr_reader :name
   def initialize(name) 
     @name = name 
-    @@name << name
+    @@names << name
     @@all << self 
   end 
   def self.all 
     @@all 
   end 
   def self.print_all 
-    @@all.each do |dog| 
+    @@names.each do |dog| 
       puts dog 
     end 
   end

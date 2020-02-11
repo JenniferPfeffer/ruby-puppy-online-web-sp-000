@@ -18,5 +18,11 @@ class Dog
       puts dog 
     end 
   end
+  def self.clear_all 
+    @@all.collect do |dog| 
+      @@all.delete(dog) 
+    end 
+    @@all
+  end
 end
   

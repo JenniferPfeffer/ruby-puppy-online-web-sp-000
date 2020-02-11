@@ -1,9 +1,11 @@
 # Add your code here 
 class Dog 
-  @@all = [ ]
+  @@all = [ ] 
+  @@names =[ ]
   attr_reader :name
   def initialize(name) 
-    @name = name
+    @name = name 
+    @@name << name
     @@all << self 
   end 
   def self.all 

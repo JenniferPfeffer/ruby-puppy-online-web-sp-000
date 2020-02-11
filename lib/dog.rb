@@ -15,7 +15,7 @@ class Dog
   end 
   def self.print_all 
     @@names.each do |dog|  
-      if dog != snoopy
+      if dog != "snoopy"
       puts dog  
     end
     end 
